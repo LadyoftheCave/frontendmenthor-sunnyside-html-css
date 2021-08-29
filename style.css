@@ -7,7 +7,6 @@
 body {
     margin: 0px;
     font-family: 'Barlow', sans-serif;
-    overflow: hidden;
 }
 
 .header {
@@ -471,7 +470,7 @@ p.link:hover::after {
 }
 
 .hamburger,
-.toogle-menu {
+.toggle-menu {
     display: none;
 }
 
@@ -537,7 +536,7 @@ p.link:hover::after {
     /*hamburgermenu*/
 
     .hamburger,
-    .toggle-manu {
+    .toggle-menu {
         display: block;
     }
 
