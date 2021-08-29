@@ -1,0 +1,657 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header {
+    grid-area: header;
+}
+
+.transformtext {
+    grid-area: transformtext;
+}
+
+.ei {
+    grid-area: ei;
+}
+
+.glas {
+    grid-area: glas;
+}
+
+.standouttext {
+    grid-area: standouttext;
+}
+
+.graphic {
+    grid-area: graphic;
+}
+
+.photography {
+    grid-area: photography;
+}
+
+.testimoni {
+    grid-area: testimoni;
+}
+
+.milk {
+    grid-area: milk;
+}
+
+.oranges {
+    grid-area: oranges;
+}
+
+.cones {
+    grid-area: cones;
+}
+
+.sugarcubes {
+    grid-area: sugarcubes;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    background-color: #fff;
+}
+
+
+.testimoni {
+    height: 40rem;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "transformtext transformtext ei ei"
+        "glas glas standouttext standouttext"
+        "graphic graphic photography photography"
+        "testimoni testimoni testimoni testimoni"
+        "milk oranges cones sugarcubes"
+        "footer  footer  footer footer";
+
+}
+
+
+h2,
+.innertext h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    line-height: 1.5rem;
+}
+
+p.link {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    margin-left: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+p.link::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(240, 145, 169);
+    border-radius: 50px;
+    top: 1rem;
+    left: -0.5rem;
+    height: 0.5rem;
+    width: 8.5rem;
+    opacity: 0.4;
+
+
+}
+
+p.link2::after {
+    background-color: yellow;
+}
+
+p.link:hover::after {
+    opacity: 1;
+    z-index: -1;
+}
+
+.innerbox {
+    width: 21rem;
+    height: 25rem;
+    display: grid;
+    place-items: center;
+
+}
+
+.transformtext,
+.standouttext {
+    display: grid;
+    place-items: center;
+}
+
+.graphic,
+.photography {
+    display: grid;
+    place-items: center;
+}
+
+.innergraph {
+    text-align: center;
+}
+
+.graphcolor {
+    color: #24574E;
+}
+
+.photocolor {
+    color: #2B6478;
+}
+
+.innertesti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60rem;
+    height: 30rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.clienttestimonialstext {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: grey;
+}
+
+.testi {
+    text-align: center;
+    width: 19rem;
+
+}
+
+.testi img {
+    border-radius: 50%;
+    width: 3.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.testi h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.testi h4 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+}
+
+.innerboxgraphphot {
+    width: 21rem;
+    height: 25rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.ei {
+    background-image: url(images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.glas {
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.graphic {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center 0.00.5rem;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    height: 30rem;
+}
+
+.photography {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center 0.03rem;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.milk {
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center 0.03rem;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.oranges {
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center 0.03rem;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.cones {
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center 0.03rem;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.sugarcubes {
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center 0.03rem;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.footer {
+    background-color: #90D4C5;
+    height: 21rem;
+    display: grid;
+    place-items: center;
+}
+
+.innerfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footermenu {
+    color: #24574E;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.footermenu ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footermenu ul li:hover {
+    color: white;
+}
+
+.footermenu.icons:hover {
+    fill: #fff;
+}
+
+.icons svg {
+    margin-right: 2rem;
+    fill: #24574E;
+}
+
+.icons svg:nth-child(4) {
+    margin-right: 0;
+}
+
+.icons svg:nth-child(1) {
+    margin-left: 1rem;
+}
+
+.icons svg:hover {
+    fill: white;
+}
+
+
+/*nieuweheader*/
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: start;
+    padding: 20px 25px;
+    transition: 0.3s;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.menuplustext {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo a img {
+    display: block;
+    width: 100%;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 40px 15px;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.menu li:last-child>a {
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+    font-family: 'Fraunces', serif;
+    padding: 15px 32px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu>li:last-child>a:hover {
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+    font-family: 'Fraunces', serif;
+    padding: 15px 32px;
+    font-weight: 700;
+    background-color: rgba(79, 154, 160, 0.45);
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white
+}
+
+.hamburger {
+    position: relative;
+    width: 2.5rem;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 2.5rem;
+    top: -10px;
+}
+
+.hamburger::after {
+    top: 10px;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 2.5rem;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toogle-menu {
+    display: none;
+}
+
+.navigation input:checked+.hamburger {
+    background: transparent;
+}
+
+.navigation input:checked+.hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+
+}
+
+.navigation input:checked+.hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+
+}
+
+.navigation input:checked~.menu {
+    right: 0;
+}
+
+.creatives {
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    margin-top: 14rem;
+}
+
+.creativeplusarrow {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media (max-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "ei ei"
+            "transformtext transformtext"
+            "glas glas"
+            "standouttext standouttext"
+            "graphic graphic"
+            "photography photography"
+            "testimoni testimoni"
+            "testimoni testimoni"
+            "milk oranges"
+            "cones sugarcubes"
+            "footer  footer";
+    }
+
+    /*hamburgermenu*/
+
+    .hamburger,
+    .toggle-manu {
+        display: block;
+    }
+
+    .header {
+        background-image: url(images/mobile/image-header.jpg);
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        background: white;
+        width: 20rem;
+        height: 20rem;
+        padding-top: 3rem;
+        margin-top: 6rem;
+        margin-right: 25px;
+        position: absolute;
+        padding-right: 1.5rem;
+    }
+
+    .menu li {
+        padding-bottom: 2rem;
+    }
+
+    .menu li a,
+    .menu li a:hover {
+        color: rgb(168, 166, 166);
+    }
+
+    .menu>li:last-child {
+        padding-top: 1rem;
+    }
+
+    .menu li:last-child>a {
+        background-color: #FBD601;
+    }
+
+    .menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 40px solid rgb(250, 248, 248);
+        border-left: 40px solid transparent;
+        margin-top: -2rem;
+    }
+
+    .testimoni {
+        height: 65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .testimonials {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        place-items: center;
+    }
+
+    .innertesti {
+        width: 20rem;
+        height: auto;
+    }
+
+    .header {
+        height: 35 rem;
+        background-size: cover;
+    }
+
+    .creatives {
+        margin-top: 5rem;
+        font-size: 2.3rem
+    }
+
+    .arrow {
+        margin-top: 1rem;
+    }
+
+    .graphic {
+        background-position: center;
+    }
+
+    .ei {
+        height: 25rem;
+    }
+
+    .glas {
+        height: 25rem;
+    }
+
+    .milk,
+    .oranges,
+    .cones,
+    .sugarcubes {
+        height: 15rem;
+    }
+
+    .clienttestimonialstext {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+}
